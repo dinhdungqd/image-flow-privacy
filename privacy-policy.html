@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Image Flow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1f2937; background: #f8fafc; padding: 40px 20px; }
+        .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        h1 { font-size: 28px; color: #111827; margin-bottom: 8px; }
+        .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 18px; color: #1f2937; margin-top: 28px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e7eb; }
+        p, li { font-size: 14px; color: #374151; margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        .highlight { background: #f0fdf4; border-left: 3px solid #10b981; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0; }
+        .highlight p { margin: 0; color: #065f46; font-weight: 500; }
+        .contact { background: #eff6ff; padding: 16px; border-radius: 8px; margin-top: 24px; }
+        .contact p { color: #1e40af; margin: 0; }
+        footer { text-align: center; margin-top: 32px; color: #9ca3af; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Privacy Policy</h1>
+        <p class="subtitle">Image Flow - Chrome Extension | Cập nhật lần cuối: 17/05/2026</p>
+
+        <div class="highlight">
+            <p>Image Flow cam kết bảo vệ quyền riêng tư của người dùng. Extension này KHÔNG thu thập, bán, hoặc chia sẻ dữ liệu cá nhân cho bất kỳ bên thứ ba nào.</p>
+        </div>
+
+        <h2>1. Thông tin chúng tôi thu thập</h2>
+        <p>Image Flow chỉ lưu trữ dữ liệu <strong>cục bộ trên thiết bị của bạn</strong> (thông qua Chrome Storage API) bao gồm:</p>
+        <ul>
+            <li>Cài đặt cấu hình extension (theme, kích thước cửa sổ, tùy chọn render)</li>
+            <li>Prompt đã lưu trong thư viện cá nhân</li>
+            <li>Ảnh tham chiếu (reference images) dưới dạng base64</li>
+            <li>Lịch sử prompt gần đây (tối đa 20 mục)</li>
+            <li>Trạng thái kết nối Google Drive (token xác thực)</li>
+        </ul>
+
+        <h2>2. Quyền truy cập (Permissions)</h2>
+        <p>Extension yêu cầu các quyền sau với mục đích cụ thể:</p>
+        <ul>
+            <li><strong>identity</strong> — Xác thực với Google OAuth2 để kết nối Google Drive (đồng bộ dữ liệu). Chỉ kích hoạt khi người dùng chủ động bấm "Kết nối Drive".</li>
+            <li><strong>downloads</strong> — Tải ảnh và video đã tạo về máy tính của người dùng.</li>
+            <li><strong>scripting</strong> — Inject script vào trang Google Labs Flow để tự động hóa quy trình tạo ảnh AI.</li>
+            <li><strong>storage</strong> — Lưu trữ cài đặt và dữ liệu cục bộ trên trình duyệt.</li>
+            <li><strong>tabs</strong> — Phát hiện tab Google Labs đang mở để điều hướng và giao tiếp.</li>
+            <li><strong>alarms</strong> — Sử dụng Chrome Alarms API để thực hiện các tác vụ nền định kỳ như kiểm tra cập nhật phiên bản, đồng bộ trạng thái và duy trì hoạt động ổn định của extension. Không được sử dụng để theo dõi hoạt động duyệt web của người dùng.</li>
+            <li><strong>notifications</strong> — Thông báo khi tác vụ hoàn thành hoặc có bản cập nhật mới.</li>
+            <li><strong>sidePanel</strong> — Hiển thị giao diện chính của extension dưới dạng Side Panel.</li>
+            <li><strong>contextMenus</strong> — Thêm tùy chọn "Lưu ảnh vào Image Flow" khi click chuột phải.</li>
+        </ul>
+
+        <h2>3. Host Permissions</h2>
+        <p>Extension truy cập các domain sau:</p>
+        <ul>
+            <li><strong>labs.google</strong> — Trang Google Labs Flow, nơi extension hoạt động chính.</li>
+            <li><strong>googleapis.com</strong> — API Google Drive để đồng bộ dữ liệu và Google Translate.</li>
+            <li><strong>nguyenanhdung.io.vn</strong> — Server riêng để kiểm tra cập nhật và xác thực bản quyền.</li>
+            <li><strong>api.opennana.com, api.civitai.com</strong> — Nguồn prompt online công khai.</li>
+            <li><strong>api.telegram.org</strong> — Gửi thông báo Telegram (tùy chọn, do người dùng cấu hình).</li>
+            <li><strong>chatgpt.com, gemini.google.com</strong> — Tích hợp AI để phân tích và tạo prompt.</li>
+        </ul>
+
+        <h2>4. Google Drive</h2>
+        <p>Khi người dùng kết nối Google Drive:</p>
+        <ul>
+            <li>Extension chỉ truy cập các file do chính nó tạo ra (scope: <code>drive.file</code>).</li>
+            <li>Không đọc, sửa, hoặc xóa bất kỳ file nào khác trên Drive của bạn.</li>
+            <li>Dữ liệu được lưu trong thư mục riêng "Image_Flow_Pro" trên Drive.</li>
+            <li>Người dùng có thể ngắt kết nối bất cứ lúc nào trong phần Cấu hình.</li>
+        </ul>
+
+        <h2>5. Dữ liệu KHÔNG được thu thập</h2>
+        <ul>
+            <li>Extension không chủ đích thu thập hoặc bán thông tin cá nhân của người dùng.</li>
+            <li>Xác thực tài khoản Google (OAuth2) chỉ được sử dụng cho tính năng đồng bộ Google Drive tùy chọn, do người dùng chủ động kích hoạt.</li>
+            <li>Không theo dõi lịch sử duyệt web</li>
+            <li>Không sử dụng cookie theo dõi</li>
+            <li>Không hiển thị quảng cáo</li>
+        </ul>
+
+        <h2>6. Truyền dữ liệu đến dịch vụ bên thứ ba</h2>
+        <p>Dữ liệu người dùng chỉ được truyền đến các dịch vụ bên thứ ba khi cần thiết cho chức năng mà người dùng yêu cầu, bao gồm:</p>
+        <ul>
+            <li>Google Drive — đồng bộ dữ liệu (do người dùng chủ động kích hoạt)</li>
+            <li>Google Gemini / ChatGPT — tích hợp AI phân tích prompt (do người dùng chủ động gửi)</li>
+            <li>Telegram API — gửi thông báo (do người dùng tự cấu hình Bot Token và Chat ID)</li>
+        </ul>
+        <p>Không có dữ liệu nào được gửi tự động mà không có hành động rõ ràng từ người dùng.</p>
+
+        <h2>7. Bảo mật dữ liệu</h2>
+        <p>Tất cả dữ liệu được lưu trữ cục bộ trong Chrome Storage và IndexedDB. Khi đồng bộ lên Google Drive, dữ liệu được truyền qua kết nối HTTPS mã hóa.</p>
+        <p>Extension có thể liên hệ server riêng (<code>nguyenanhdung.io.vn</code>) để kiểm tra cập nhật phiên bản và xác thực bản quyền. Nội dung do người dùng tạo ra (prompt, ảnh) không được lưu trữ vĩnh viễn trên các server này.</p>
+
+        <h2>8. Quyền của người dùng</h2>
+        <ul>
+            <li>Bạn có thể xóa toàn bộ dữ liệu bất cứ lúc nào trong phần Config > "Dọn dẹp bộ nhớ".</li>
+            <li>Bạn có thể ngắt kết nối Google Drive trong phần Config.</li>
+            <li>Gỡ cài đặt extension sẽ xóa toàn bộ dữ liệu cục bộ.</li>
+        </ul>
+
+        <h2>9. Thay đổi chính sách</h2>
+        <p>Chính sách bảo mật này có thể được cập nhật theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo qua bản cập nhật extension.</p>
+
+        <h2>10. Bảo mật mã nguồn</h2>
+        <p>Tất cả mã thực thi (JavaScript) được đóng gói cục bộ trong extension bundle. Extension không sử dụng:</p>
+        <ul>
+            <li>Remote hosted JavaScript (không tải code từ xa)</li>
+            <li><code>eval()</code></li>
+            <li><code>new Function()</code></li>
+            <li>Dynamic code execution (thực thi mã động)</li>
+        </ul>
+        <p>Một số file JavaScript được bundle/minify nhằm tối ưu hiệu suất và bảo vệ logic nội bộ của extension. Tuy nhiên toàn bộ mã đều được đóng gói cục bộ và không tải mã thực thi từ server bên ngoài.</p>
+
+        <h2>11. Liên hệ</h2>
+        <div class="contact">
+            <p>📧 Nếu bạn có câu hỏi về chính sách bảo mật, vui lòng liên hệ:</p>
+            <p><strong>Dũng Nguyễn</strong></p>
+            <p>Email: nguyendungqd1991@gmail.com</p>
+        </div>
+
+        <footer>
+            <p>© 2026 Image Flow. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
