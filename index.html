@@ -1,131 +1,272 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Image Flow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1f2937; background: #f8fafc; padding: 40px 20px; }
-        .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        h1 { font-size: 28px; color: #111827; margin-bottom: 8px; }
-        .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
-        h2 { font-size: 18px; color: #1f2937; margin-top: 28px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e7eb; }
-        p, li { font-size: 14px; color: #374151; margin-bottom: 10px; }
-        ul { padding-left: 20px; margin-bottom: 16px; }
-        li { margin-bottom: 6px; }
-        .highlight { background: #f0fdf4; border-left: 3px solid #10b981; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0; }
-        .highlight p { margin: 0; color: #065f46; font-weight: 500; }
-        .contact { background: #eff6ff; padding: 16px; border-radius: 8px; margin-top: 24px; }
-        .contact p { color: #1e40af; margin: 0; }
-        footer { text-align: center; margin-top: 32px; color: #9ca3af; font-size: 12px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Image Flow Chrome Extension</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f8fafc;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .badge {
+      display: inline-block;
+      background: #4F46E5;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .meta a { color: #4F46E5; text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 36px 0 12px;
+      padding-left: 14px;
+      border-left: 4px solid #4F46E5;
+    }
+    p { margin-bottom: 12px; color: #374151; }
+    ul { margin: 8px 0 16px 20px; }
+    li { margin-bottom: 6px; color: #374151; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #e2e8f0;
+      color: #0f172a;
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid #e2e8f0;
+      color: #374151;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .highlight {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      color: #1e40af;
+      font-size: 15px;
+    }
+    .highlight strong { color: #1e3a8a; }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 13px;
+      color: #94a3b8;
+      text-align: center;
+    }
+    footer a { color: #4F46E5; text-decoration: none; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🔒 Privacy Policy</h1>
-        <p class="subtitle">Image Flow - Chrome Extension | Cập nhật lần cuối: 17/05/2026</p>
+  <div class="container">
 
-        <div class="highlight">
-            <p>Image Flow cam kết bảo vệ quyền riêng tư của người dùng. Extension này KHÔNG thu thập, bán, hoặc chia sẻ dữ liệu cá nhân cho bất kỳ bên thứ ba nào.</p>
-        </div>
-
-        <h2>1. Thông tin chúng tôi thu thập</h2>
-        <p>Image Flow chỉ lưu trữ dữ liệu <strong>cục bộ trên thiết bị của bạn</strong> (thông qua Chrome Storage API) bao gồm:</p>
-        <ul>
-            <li>Cài đặt cấu hình extension (theme, kích thước cửa sổ, tùy chọn render)</li>
-            <li>Prompt đã lưu trong thư viện cá nhân</li>
-            <li>Ảnh tham chiếu (reference images) dưới dạng base64</li>
-            <li>Lịch sử prompt gần đây (tối đa 20 mục)</li>
-            <li>Trạng thái kết nối Google Drive (token xác thực)</li>
-        </ul>
-
-        <h2>2. Quyền truy cập (Permissions)</h2>
-        <p>Extension yêu cầu các quyền sau với mục đích cụ thể:</p>
-        <ul>
-            <li><strong>identity</strong> — Xác thực với Google OAuth2 để kết nối Google Drive (đồng bộ dữ liệu). Chỉ kích hoạt khi người dùng chủ động bấm "Kết nối Drive".</li>
-            <li><strong>downloads</strong> — Tải ảnh và video đã tạo về máy tính của người dùng.</li>
-            <li><strong>scripting</strong> — Inject script vào trang Google Labs Flow để tự động hóa quy trình tạo ảnh AI.</li>
-            <li><strong>storage</strong> — Lưu trữ cài đặt và dữ liệu cục bộ trên trình duyệt.</li>
-            <li><strong>tabs</strong> — Phát hiện tab Google Labs đang mở để điều hướng và giao tiếp.</li>
-            <li><strong>alarms</strong> — Sử dụng Chrome Alarms API để thực hiện các tác vụ nền định kỳ như kiểm tra cập nhật phiên bản, đồng bộ trạng thái và duy trì hoạt động ổn định của extension. Không được sử dụng để theo dõi hoạt động duyệt web của người dùng.</li>
-            <li><strong>notifications</strong> — Thông báo khi tác vụ hoàn thành hoặc có bản cập nhật mới.</li>
-            <li><strong>sidePanel</strong> — Hiển thị giao diện chính của extension dưới dạng Side Panel.</li>
-            <li><strong>contextMenus</strong> — Thêm tùy chọn "Lưu ảnh vào Image Flow" khi click chuột phải.</li>
-        </ul>
-
-        <h2>3. Host Permissions</h2>
-        <p>Extension truy cập các domain sau:</p>
-        <ul>
-            <li><strong>labs.google</strong> — Trang Google Labs Flow, nơi extension hoạt động chính.</li>
-            <li><strong>googleapis.com</strong> — API Google Drive để đồng bộ dữ liệu và Google Translate.</li>
-            <li><strong>nguyenanhdung.io.vn</strong> — Server riêng để kiểm tra cập nhật và xác thực bản quyền.</li>
-            <li><strong>api.opennana.com, api.civitai.com</strong> — Nguồn prompt online công khai.</li>
-            <li><strong>api.telegram.org</strong> — Gửi thông báo Telegram (tùy chọn, do người dùng cấu hình).</li>
-            <li><strong>chatgpt.com, gemini.google.com</strong> — Tích hợp AI để phân tích và tạo prompt.</li>
-        </ul>
-
-        <h2>4. Google Drive</h2>
-        <p>Khi người dùng kết nối Google Drive:</p>
-        <ul>
-            <li>Extension chỉ truy cập các file do chính nó tạo ra (scope: <code>drive.file</code>).</li>
-            <li>Không đọc, sửa, hoặc xóa bất kỳ file nào khác trên Drive của bạn.</li>
-            <li>Dữ liệu được lưu trong thư mục riêng "Image_Flow_Pro" trên Drive.</li>
-            <li>Người dùng có thể ngắt kết nối bất cứ lúc nào trong phần Cấu hình.</li>
-        </ul>
-
-        <h2>5. Dữ liệu KHÔNG được thu thập</h2>
-        <ul>
-            <li>Extension không chủ đích thu thập hoặc bán thông tin cá nhân của người dùng.</li>
-            <li>Xác thực tài khoản Google (OAuth2) chỉ được sử dụng cho tính năng đồng bộ Google Drive tùy chọn, do người dùng chủ động kích hoạt.</li>
-            <li>Không theo dõi lịch sử duyệt web</li>
-            <li>Không sử dụng cookie theo dõi</li>
-            <li>Không hiển thị quảng cáo</li>
-        </ul>
-
-        <h2>6. Truyền dữ liệu đến dịch vụ bên thứ ba</h2>
-        <p>Dữ liệu người dùng chỉ được truyền đến các dịch vụ bên thứ ba khi cần thiết cho chức năng mà người dùng yêu cầu, bao gồm:</p>
-        <ul>
-            <li>Google Drive — đồng bộ dữ liệu (do người dùng chủ động kích hoạt)</li>
-            <li>Google Gemini / ChatGPT — tích hợp AI phân tích prompt (do người dùng chủ động gửi)</li>
-            <li>Telegram API — gửi thông báo (do người dùng tự cấu hình Bot Token và Chat ID)</li>
-        </ul>
-        <p>Không có dữ liệu nào được gửi tự động mà không có hành động rõ ràng từ người dùng.</p>
-
-        <h2>7. Bảo mật dữ liệu</h2>
-        <p>Tất cả dữ liệu được lưu trữ cục bộ trong Chrome Storage và IndexedDB. Khi đồng bộ lên Google Drive, dữ liệu được truyền qua kết nối HTTPS mã hóa.</p>
-        <p>Extension có thể liên hệ server riêng (<code>nguyenanhdung.io.vn</code>) để kiểm tra cập nhật phiên bản và xác thực bản quyền. Nội dung do người dùng tạo ra (prompt, ảnh) không được lưu trữ vĩnh viễn trên các server này.</p>
-
-        <h2>8. Quyền của người dùng</h2>
-        <ul>
-            <li>Bạn có thể xóa toàn bộ dữ liệu bất cứ lúc nào trong phần Config > "Dọn dẹp bộ nhớ".</li>
-            <li>Bạn có thể ngắt kết nối Google Drive trong phần Config.</li>
-            <li>Gỡ cài đặt extension sẽ xóa toàn bộ dữ liệu cục bộ.</li>
-        </ul>
-
-        <h2>9. Thay đổi chính sách</h2>
-        <p>Chính sách bảo mật này có thể được cập nhật theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo qua bản cập nhật extension.</p>
-
-        <h2>10. Bảo mật mã nguồn</h2>
-        <p>Tất cả mã thực thi (JavaScript) được đóng gói cục bộ trong extension bundle. Extension không sử dụng:</p>
-        <ul>
-            <li>Remote hosted JavaScript (không tải code từ xa)</li>
-            <li><code>eval()</code></li>
-            <li><code>new Function()</code></li>
-            <li>Dynamic code execution (thực thi mã động)</li>
-        </ul>
-        <p>Một số file JavaScript được bundle/minify nhằm tối ưu hiệu suất và bảo vệ logic nội bộ của extension. Tuy nhiên toàn bộ mã đều được đóng gói cục bộ và không tải mã thực thi từ server bên ngoài.</p>
-
-        <h2>11. Liên hệ</h2>
-        <div class="contact">
-            <p>📧 Nếu bạn có câu hỏi về chính sách bảo mật, vui lòng liên hệ:</p>
-            <p><strong>Dũng Nguyễn</strong></p>
-            <p>Email: nguyendungqd1991@gmail.com</p>
-        </div>
-
-        <footer>
-            <p>© 2026 Image Flow. All rights reserved.</p>
-        </footer>
+    <span class="badge">Chrome Extension</span>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <strong>Image Flow</strong> &nbsp;·&nbsp;
+      Last updated: <strong>June 2026</strong> &nbsp;·&nbsp;
+      Developer: <a href="https://nguyenanhdung.io.vn" target="_blank">Nguyen Anh Dung</a> &nbsp;·&nbsp;
+      Contact: <a href="mailto:support@nguyenanhdung.io.vn">support@nguyenanhdung.io.vn</a>
     </div>
+
+    <div class="highlight">
+      <strong>Summary:</strong> Image Flow does <strong>not</strong> collect your prompts, generated images, videos, or browsing history. We only process the minimum data required to verify your license and provide core extension features. All user content stays on your device.
+    </div>
+
+    <!-- 1 -->
+    <h2>1. What This Extension Does</h2>
+    <p>Image Flow is a Chrome extension that automates workflow on <strong>Google Labs Flow</strong> (labs.google). It helps users manage prompts, batch-generate images and videos, tag AI characters, and organize results in a local library.</p>
+
+    <!-- 2 -->
+    <h2>2. Data We Collect</h2>
+
+    <h3 style="font-size:16px;font-weight:700;margin:20px 0 8px;color:#374151;">2.1 License Verification (only when you activate a license key)</h3>
+    <ul>
+      <li><strong>License Key</strong> — entered by you to verify your subscription.</li>
+      <li><strong>Device ID</strong> — a randomly generated UUID (<code>crypto.randomUUID()</code>) created and stored locally in <code>chrome.storage.local</code>. This ID is used solely to bind your license to your device. We do <strong>not</strong> collect hardware fingerprints, MAC addresses, IP addresses, or any system information.</li>
+    </ul>
+
+    <h3 style="font-size:16px;font-weight:700;margin:20px 0 8px;color:#374151;">2.2 Google Drive (only if you use Drive features)</h3>
+    <ul>
+      <li>Access is limited to files <strong>created by this extension</strong> using the <code>drive.file</code> OAuth scope.</li>
+      <li>We cannot read, modify, or delete any pre-existing files in your Google Drive.</li>
+    </ul>
+
+    <h3 style="font-size:16px;font-weight:700;margin:20px 0 8px;color:#374151;">2.3 Version Check</h3>
+    <ul>
+      <li>Every 6 hours, the extension checks our server for a newer version number. <strong>No user data is sent</strong> — it is a simple GET request that returns a version string.</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2>3. Data We Do NOT Collect</h2>
+    <ul>
+      <li>❌ Your prompts or prompt history</li>
+      <li>❌ Generated images or videos</li>
+      <li>❌ Browsing history or visited URLs</li>
+      <li>❌ Hardware fingerprints or system information</li>
+      <li>❌ Personal information (name, email, location)</li>
+      <li>❌ Analytics or behavioral tracking data</li>
+      <li>❌ Advertising identifiers</li>
+    </ul>
+
+    <!-- 4 -->
+    <h2>4. External Services</h2>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Purpose</th>
+        <th>Data Sent</th>
+      </tr>
+      <tr>
+        <td>nguyenanhdung.io.vn</td>
+        <td>License verification &amp; version check</td>
+        <td>License key + Device UUID (license only); nothing for version check</td>
+      </tr>
+      <tr>
+        <td>translate.googleapis.com</td>
+        <td>Translate prompts to English</td>
+        <td>Only the prompt text you explicitly ask to translate</td>
+      </tr>
+      <tr>
+        <td>civitai.com / api.opennana.com</td>
+        <td>Browse public prompt library</td>
+        <td>Search keyword only (no personal data)</td>
+      </tr>
+      <tr>
+        <td>www.googleapis.com</td>
+        <td>Google Drive file storage</td>
+        <td>Only files you explicitly save via the Drive feature</td>
+      </tr>
+      <tr>
+        <td>chatgpt.com / gemini.google.com</td>
+        <td>Open AI tools in new tab (user-initiated)</td>
+        <td>Nothing — extension only opens a new browser tab</td>
+      </tr>
+      <tr>
+        <td>labs.google</td>
+        <td>Core automation target</td>
+        <td>Nothing sent to us — automation runs entirely in your browser</td>
+      </tr>
+    </table>
+
+    <!-- 5 -->
+    <h2>5. Local Data Storage</h2>
+    <p>All user data — prompts, images, settings, queue state, license status — is stored locally in <strong><code>chrome.storage.local</code></strong> on your own device. This data never leaves your browser unless you explicitly use a feature that requires it (e.g., Google Drive sync).</p>
+
+    <!-- 6 -->
+    <h2>6. Permissions Justification</h2>
+    <table>
+      <tr>
+        <th>Permission</th>
+        <th>Why it is needed</th>
+      </tr>
+      <tr>
+        <td><code>activeTab</code>, <code>tabs</code></td>
+        <td>To detect and interact with the Google Labs Flow tab for automation</td>
+      </tr>
+      <tr>
+        <td><code>scripting</code></td>
+        <td>To inject the automation script into labs.google pages</td>
+      </tr>
+      <tr>
+        <td><code>storage</code></td>
+        <td>To save prompts, settings, library, and license data locally</td>
+      </tr>
+      <tr>
+        <td><code>downloads</code></td>
+        <td>To save generated images and videos to your local device</td>
+      </tr>
+      <tr>
+        <td><code>notifications</code></td>
+        <td>To notify you when a batch generation is complete</td>
+      </tr>
+      <tr>
+        <td><code>identity</code></td>
+        <td>To authenticate with Google Drive for the Drive sync feature</td>
+      </tr>
+      <tr>
+        <td><code>sidePanel</code></td>
+        <td>To display the extension UI as a side panel in Chrome</td>
+      </tr>
+      <tr>
+        <td><code>alarms</code></td>
+        <td>To periodically check for extension updates (every 6 hours)</td>
+      </tr>
+      <tr>
+        <td><code>contextMenus</code></td>
+        <td>To add "Save to Image Flow" right-click menu on images</td>
+      </tr>
+    </table>
+
+    <!-- 7 -->
+    <h2>7. Data Retention &amp; Deletion</h2>
+    <p>All local data can be deleted at any time:</p>
+    <ul>
+      <li>Open <strong>chrome://extensions</strong> → Image Flow → <strong>Clear site data</strong></li>
+      <li>Or uninstall the extension — all local data is permanently removed</li>
+    </ul>
+    <p>To remove your license record from our server, email us at <a href="mailto:support@nguyenanhdung.io.vn" style="color:#4F46E5">support@nguyenanhdung.io.vn</a>.</p>
+
+    <!-- 8 -->
+    <h2>8. Children's Privacy</h2>
+    <p>Image Flow is not directed at children under 13 years of age. We do not knowingly collect any personal data from children.</p>
+
+    <!-- 9 -->
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy when we add new features. The "Last updated" date at the top of this page will reflect any changes. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <!-- 10 -->
+    <h2>10. Contact</h2>
+    <p>
+      <strong>Developer:</strong> Nguyen Anh Dung<br>
+      <strong>Email:</strong> <a href="mailto:support@nguyenanhdung.io.vn" style="color:#4F46E5">support@nguyenanhdung.io.vn</a><br>
+      <strong>Website:</strong> <a href="https://nguyenanhdung.io.vn/image-flow" target="_blank" style="color:#4F46E5">nguyenanhdung.io.vn/image-flow</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Image Flow · <a href="https://nguyenanhdung.io.vn/image-flow">nguyenanhdung.io.vn</a> · All rights reserved
+    </footer>
+
+  </div>
 </body>
 </html>
